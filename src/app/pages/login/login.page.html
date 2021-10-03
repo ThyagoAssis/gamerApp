@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" routerLink="/welcome">
+        <ion-icon name="return-up-back-outline"></ion-icon>
+      </ion-button>      
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+   <ion-row>
+     <ion-col>
+      <ion-label>Login</ion-label>
+     </ion-col>
+     <ion-col style="text-align: right;" >
+       <ion-button class="button_register" routerLink="/register">Registrar</ion-button>
+     </ion-col>
+   </ion-row>
+   <ion-row >
+     <ion-col>
+       <div >
+        <ion-input type="email" placeholder="email@email.com"  autofocus required></ion-input>
+       </div>       
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <div>
+        <ion-input type="password" placeholder="Password" required></ion-input>
+       </div>       
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col>
+       <ion-button expand="block" class="button_logar">Logar</ion-button>
+     </ion-col>
+   </ion-row>
+   <ion-row>
+     <ion-col style="text-align: center;">
+      <ion-button class="button_passwd">Esqueci a Senha</ion-button>
+     </ion-col>
+   </ion-row>
+   
+ </ion-grid>
+</ion-content>
