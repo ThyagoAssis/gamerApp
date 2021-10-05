@@ -1,3 +1,7 @@
+ion-toolbar{
+    --min-height: 2px;
+}
+
 ion-label{
     color:#2A4072;
     font-weight: 500;
@@ -9,6 +13,21 @@ ion-input{
     border-radius: 10px;
     height: 39px;
    /* width: 258px;*/
+}
+
+ion-span{
+    margin-top: 20px;
+    color:#2A4072;
+    font-size: 13px;
+}
+
+#form_button{    
+    font-weight: 900;
+    font-size: 11px;
+    font-style: normal;
+    --border-radius: 6px;
+    height: 46.15px;
+    width: 166px;
 }
 
 .label{

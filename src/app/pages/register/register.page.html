@@ -9,79 +9,96 @@
 </ion-header>
 
 <ion-content>
+
   <ion-grid>
+
     <ion-row>
       <ion-col style="text-align: center;">
         <ion-label>Registrar</ion-label>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-label class="label">Nome: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="text" placeholder="José"></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">SobreNome: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="text" placeholder="da Silva"></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">CPF: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="text" placeholder="000.000.000.00"></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">Nascimento: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="text" placeholder="dd/mm/aaaa"></ion-input>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">Telefone: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="text" placeholder="(00) 00000-0000"></ion-input>
-      </ion-col>
-    </ion-row>
+    <form>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Nome: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="text" placeholder="José" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">SobreNome: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="text" placeholder="da Silva" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">CPF: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="text" placeholder="000.000.000.00" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Nascimento: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="text" placeholder="dd/mm/aaaa" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Telefone: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="tel" placeholder="(00) 00000-0000" required></ion-input>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">Celular: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="tel" placeholder="(00) 00000-0000"></ion-input>
-      </ion-col>
-    </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Celular: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="tel" placeholder="(00) 00000-0000" required></ion-input>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">Telefone: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="email" placeholder="email@email.com" required></ion-input>
-      </ion-col>
-    </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Telefone: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="email" placeholder="email@email.com" required></ion-input>
+        </ion-col>
+      </ion-row>
 
-    <ion-row>
-      <ion-col >
-        <ion-label class="label">Senha: </ion-label>
-      </ion-col>
-      <ion-col size="8">
-        <ion-input type="email" placeholder="********" required></ion-input>
-      </ion-col>
-    </ion-row>
-   
+      <ion-row>
+        <ion-col>
+          <ion-label class="label">Senha: </ion-label>
+        </ion-col>
+        <ion-col size="8">
+          <ion-input type="email" placeholder="********" required></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-span>
+            Ao realizar o registro, você concorda com nossos termos de uso do aplicativo e da nossa loja.
+          </ion-span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <ion-button type="submit "id="form_button">Registrar</ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+
   </ion-grid>
 </ion-content>
