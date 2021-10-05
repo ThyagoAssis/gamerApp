@@ -23,7 +23,11 @@ const routes: Routes = [
   {
     path: 'footer-store',
     loadChildren: () => import('./components/footer-store/footer-store.module').then( m => m.FooterStoreModule)
+  },  {
+    path: 'product',
+    loadChildren: () => import('./pages/product/product.module').then( m => m.ProductPageModule)
   },
+
   
 
 
