@@ -1,14 +1,121 @@
-ion-content{
-    --ion-background-color: #FAFAFA;
+* {
+    margin: 0;
 }
-
 ion-header{
-    --ion-background-color: #FAFAFA;
+    --ion-background-color: #FAFAFA;   
 }
 
-ion-label{
-    color:#2A4072;
-    font-weight: 500;
-    font-size: 24px;     
+ion-content{
+    --ion-background-color: #FAFAFA;    
+    ion-label{
+        color:#2A4072;
+        font-weight: 500;
+        font-size: 24px;
+        margin-top: -10px;   
+    }
+
+    ion-col{
+        border-radius: 15px;
+    }
+
+    .col1{
+        
+        background-color: #ee0f0f;        
+        text-align: center;
+        border-radius: 15px;   
+        height: 228px;        
+        padding: 10px;
+
+        ion-card-title{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        ion-card-subtitle{
+            color: black;
+            font-size: 14px;
+            font-weight: 600;           
+        }
+
+   
+    }
+
+    .col2{        
+        background-color: rgba(33, 200, 100, 1);        
+        height: 184px;       
+        border-radius: 15px; 
+        padding: 10px;
+      
+        ion-card-title{
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        ion-card-subtitle{          
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: right;
+            margin-top: -20px;         
+        }
+    }
+
+    .col3{
+       
+        background-color: rgba(0, 148, 255, 1);        
+        height: 184px;
+        text-align: center;
+        border-radius: 15px;  
+        padding: 10px;
+
+        ion-card-title{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        ion-card-subtitle{          
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: right;
+            margin-top: -20px;         
+        }
+    }
+
+    .col4{
+        margin-top: -40px;        
+        background-color: rgba(105, 105, 105, 1); 
+        height: 228px;
+        text-align: center;
+        border-radius: 15px;  
+        padding: 10px;
+        
+        ion-img{
+            margin: 50px 0 20px 0;
+            width: 100%;
+        }
+
+        ion-card-title{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        ion-card-subtitle{          
+            color: black;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: right;              
+        }      
+       
+    }   
+
+   
+   
 }
+
+
+
+
+
+
 

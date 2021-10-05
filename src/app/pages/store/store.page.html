@@ -8,8 +8,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content style="background-color: #FAFAFA;">
+<ion-content [scrollTop]="false">
   <ion-grid>
+
+    <!--- LINHA 01 -->
     <ion-row>
       <ion-col>
         <ion-label>Loja</ion-label>
@@ -20,6 +22,64 @@
         <ion-searchbar animated mode="ios" placeholder="Pesquisar"></ion-searchbar>
       </ion-col>
     </ion-row>
+
+    <!--- LINHA 02 -->
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-card class="col1">
+          <ion-card-title>{{products1.title}}</ion-card-title>
+          <ion-img [src]="products1.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products1.price}}</ion-card-subtitle>
+          </ion-card-content>          
+        </ion-card>
+
+
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="col2">
+          <ion-card-title>{{products2.title}}</ion-card-title>
+          <ion-img [src]="products2.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products2.price}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+    <!--- LINHA 03 -->
+    <ion-row>
+      <ion-col class="ion-align-self-center">
+
+        <ion-card class="col3" size="6">
+          <ion-card-title>{{products3.title}}</ion-card-title>
+          <ion-img [src]="products3.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products3.price}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="col4">
+          <ion-card-title>{{products4.title}}</ion-card-title>
+          <ion-img [src]="products4.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products4.price}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+    </ion-row>
   </ion-grid>
+
+
+  
+
 
 </ion-content>
