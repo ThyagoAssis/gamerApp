@@ -1,20 +1,98 @@
-*{
-    margin: 0;
-    border: 0;
-}
 
 ion-content{
-    --ion-background-color: #ee0f0f;
-    ion-img{
-        width: 100%;
-        height: 280px;
-    }
 
-    .card{
+   
+        --ion-background-color: #ee0f0f; 
+        
+        ion-img{
+            width: 100%;
+            height: 260px;
+        }
+  
+    
+
+    ion-item-divider{
+        position: absolute;
+        display: flex;
         background-color: #fff;
-        border: 0; 
-        height: 100px;
-        border-radius: 30px 30px 0 0;
+        border: 0;       
+        border-radius: 30px 30px 0px 0px;
+        width: 100%;
+        height: 80%;
+       
+
+        ion-item{
+            --ion-background-color: #fff;
+        }
+        ion-item.title{                        
+            margin-top: -40%;         
+            
+            ion-label{
+                font-size: 24px;
+                font-weight: 600;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }                      
+        }
+
+        ion-item.subtitle{        
+            margin-top: -55%;
+            display: flex;
+            justify-content: center;
+            align-items: center;   
+            --ion-background-color: #F0F0F0 !important;
+            width: 145px;
+            height: 26px;
+            
+            color: black;
+            border-radius: 6px;
+            font-size: 1em;
+
+            ion-label{
+                text-align: center;
+            }
+        }
+
+        ion-item.price{                  
+                text-align: right;
+                margin-top: -55%;              
+
+            ion-label{
+                    font-size: 18px;      
+                    font-weight: 600;
+                    margin-right: auto;
+                    margin-left: auto;
+                }               
+                
+            }
+
+        ion-item.description{
+            margin-top: -40%;            
+            text-align: left;   
+            
+            ion-label{
+                width: 100%;
+                font-size: 20px;                
+                font-weight: 500;
+            }
+        }
+
+
+        ion-item.desc_corp{
+         margin-top: -33%;
+         p{
+             font-size: 12px;
+             text-align: justify;
+         }
+        }
+
+      
+
+       
+
+        
+        
     }
 
 
