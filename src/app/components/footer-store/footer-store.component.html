@@ -1,29 +1,30 @@
 <ion-tabs>  
 
   
-    <ion-fab  vertical="bottom" horizontal="center" translucent="true" >
-      <ion-fab-button color="light">
+    <ion-fab  vertical="bottom" horizontal="center"  translucent="false">
+      <ion-fab-button [color]="color" (click)="mudacor('store')" >
         <ion-icon name="home-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
   
   
-  <ion-tab-bar mode="ios" slot="bottom" >
-    <ion-tab-button tab="store" >
+  <ion-tab-bar mode="ios" slot="bottom" [color]="color">
+    <ion-tab-button tab="store" (click)="mudacor('store')" >
       <ion-icon name="bag-outline"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab-conversations" class="comments">
+    <ion-tab-button tab="favorites" class="comments" (click)="mudacor(heart)">
       <ion-icon name="heart-outline"></ion-icon>      
     </ion-tab-button>
 
-    <svg  viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="black" fill-rule="evenodd"></path></svg>
+    <div class="division"></div>
 
-    <ion-tab-button  class="notifs">
+   
+    <ion-tab-button  class="notifs" (click)="mudacor(cart)">
       <ion-icon name="cart-outline"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button>
+    <ion-tab-button (click)="mudacor(perfil)">
       <ion-icon name="person-circle-outline"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>

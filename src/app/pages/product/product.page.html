@@ -1,7 +1,7 @@
 <ion-header class="ion-no-border">
   <ion-toolbar color="danger">
-    <ion-buttons slot="start"  >
-      <ion-button  style="background:#fff; color: black; border-radius: 3px;" routerLink="/footer-store">
+    <ion-buttons slot="start">
+      <ion-button style="background:#fff; color: black; border-radius: 3px;" routerLink="/footer-store">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -10,35 +10,46 @@
 
 
 <ion-content class="ion-no-border">
-  
-    <ion-img
+
+  <ion-img
     src="https://img.telemart.ua/181596-441299-product_popup/amd-ryzen-5-1600-3236ghz-sam4-box-yd1600bbafbox.png">
   </ion-img>
-  
 
-  <ion-item-divider>
+
+  <ion-item-divider class=" ion-no-border header">
     <ion-grid>
-      <ion-row >
+      <ion-row>
         <ion-col>
-          <ion-item lines="none" class="title">
+          <ion-item lines="none" >
             <ion-label>Ryzen 5 1600</ion-label>
           </ion-item>
         </ion-col>
       </ion-row>
-      <ion-row >
-        <ion-col >
-          <ion-item lines="none" class="subtitle" >
+    </ion-grid>
+  </ion-item-divider>
+
+  <ion-item-divider class="ion-no-border sectionA">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-item lines="none" class="qtd" >
             <ion-button fill="clear">-</ion-button>
             <ion-label>{{ qtd }}</ion-label>
             <ion-button fill="clear"> + </ion-button>
           </ion-item>
         </ion-col>
-        <ion-col >
+        <ion-col>
           <ion-item lines="none" class="price">
-            <ion-label >R$724,90</ion-label>
+            <ion-label>R$724,90</ion-label>
           </ion-item>
         </ion-col>
       </ion-row>
+    </ion-grid>
+  </ion-item-divider>
+
+
+  <ion-item-divider class="footer">
+    <ion-grid>
 
       <ion-row>
         <ion-col>
@@ -46,36 +57,47 @@
             <ion-label> Descrição </ion-label>
           </ion-item>
         </ion-col>
-      </ion-row> 
+      </ion-row>
+
       <ion-row>
-        <ion-col >
+        <ion-col>
           <ion-item lines="none" class="desc_corp">
-            <p>Com esse processador inovador e incrível você desfruta ao máximo o verdadeiro potencial do seu computador e desfruta da mais pura velocidade. Maximize o seu desempenho seja trabalhando, jogando, navegando ou assistindo o seu filme preferido, com esse processador você pode tudo!</p>
+            <p>Com esse processador inovador e incrível você desfruta ao máximo o verdadeiro potencial do seu computador
+              e desfruta da mais pura velocidade. Maximize o seu desempenho seja trabalhando, jogando, navegando ou
+              assistindo o seu filme preferido, com esse processador você pode tudo!</p>
           </ion-item>
-          
+
         </ion-col>
       </ion-row>
-         
-       
+
     </ion-grid>
-    
-
-
   </ion-item-divider>
+      <!-- 
+
+     
+
+
+    </ion-grid> -->
+
+
+
+  <!-- </ion-item-divider> -->
 </ion-content>
 
 <ion-footer class="ion-no-border">
   <ion-toolbar>
     <ion-row>
-      <ion-col >
-        <ion-button style=" width: 69px;" size="large" fill="outline" color="danger"><ion-icon name="heart"></ion-icon></ion-button>
+      <ion-col>
+        <ion-button style=" width: 69px;" size="large" fill="outline" color="danger">
+          <ion-icon name="heart"></ion-icon>
+        </ion-button>
       </ion-col>
       <ion-col style="text-align: center;">
         <ion-button style=" width: 203px; height: 53px;" size="large" color="danger">Comprar</ion-button>
       </ion-col>
     </ion-row>
-      
-      
-      
+
+
+
   </ion-toolbar>
 </ion-footer>

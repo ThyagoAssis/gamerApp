@@ -1,4 +1,4 @@
-/*  ion-tabs{
+ /* ion-tabs{
 	ion-fab {
 		margin-bottom: env(safe-area-inset-bottom);
 		ion-fab-button {
@@ -45,8 +45,8 @@
 			}		
 		}
 	}
-}  */
-
+} 
+ */
 
 
 
@@ -54,18 +54,19 @@ ion-tabs{
 	 ion-fab{
 		
 		ion-fab-button{
-			width: 70px;
-			height: 70px;
+			/* display: flex;
+			justify-content: center;
+			align-items: center;
 			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 5px;
-			
+			margin-right: auto;	 */		
+			margin-bottom: 10px;
 					
 		 }
 	 }
 	
 	 ion-tab-bar{	
 		--border: 0;
+		
 		
 		position: absolute;
 		bottom: 0;
@@ -75,16 +76,35 @@ ion-tabs{
 			content: " ";
 			width: 100%;
 			bottom: 0;
-			background: #fff;
+			background: var(--ion-color-primary);
 			height: env(safe-area-inset-bottom);
 			position: absolute;
 		}
-		svg {    
-			width: 80px;
-			margin-left: 15px;			
-			path{
-				fill: #fff;
-			}		
+
+		ion-tab-button {
+			--background: var(--ion-color-primary);
+		}
+		ion-tab-button.comments {
+			margin-right: 0px;
+			border-top-right-radius: 3px;
+		}
+		ion-tab-button.notifs {
+			margin-left: 0px;
+			border-top-left-radius: 3px;
+		}
+
+		.division {
+			width: 70px;
+			height: 70px;
+			margin-bottom: 50px;			
+			margin-left: auto;
+			margin-right: auto;
+			background-color: rgb(213, 206, 213);
+			border-radius: 100%;
+			
+						
+			//fill: #2A4072
+				
 		}
 	 }
 

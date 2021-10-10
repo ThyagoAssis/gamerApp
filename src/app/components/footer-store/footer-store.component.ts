@@ -6,9 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-store.component.scss'],
 })
 export class FooterStoreComponent implements OnInit {
+  color = 'light';
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
+
+  mudacor(botao) {
+    console.log(botao);
+    if(botao == 'store'){
+      this.color = 'light';
+    }else {
+      this.color = 'primary';
+    }
+
+  }
+
 
 }
