@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'footer-store',
+    redirectTo: 'welcome',
     pathMatch: 'full'
   },
   
@@ -27,9 +27,7 @@ const routes: Routes = [
   {
     path: 'product',
     loadChildren: () => import('./pages/product/product.module').then( m => m.ProductPageModule)
-  }, 
-
-
+  },  
 
 ];
 

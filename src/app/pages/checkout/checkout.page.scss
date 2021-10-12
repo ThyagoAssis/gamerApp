@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+ion-content{
+    --ion-background-color:#FDFDFD ;
+    ion-label{
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+    }
+
+    ion-button{
+        font-size: 13px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.01px;
+    }
+
+    svg{
+        fill{
+            color: #9586A8 !important;
+        } 
+    }
+
+    p{
+        color: #9586A8;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25.5px;
+        letter-spacing: -0.41px;
+
+    }
+}

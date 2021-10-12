@@ -15,6 +15,10 @@ const routes: Routes = [
                 path: 'favorites',
                 loadChildren: () => import('../pages/favorites/favorites.module').then( m => m.FavoritesPageModule)
               },
+              {
+                path: 'checkout',
+                loadChildren: () => import('../pages/checkout/checkout.module').then( m => m.CheckoutPageModule)
+              },
         ],
     },
     {

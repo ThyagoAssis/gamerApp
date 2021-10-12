@@ -2,7 +2,7 @@
 
   
     <ion-fab  vertical="bottom" horizontal="center"  translucent="false">
-      <ion-fab-button [color]="color" (click)="mudacor('store')" >
+      <ion-fab-button [color]="color" (click)="mudacor('store')" routerLink="/footer-store">
         <ion-icon name="home-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
@@ -20,7 +20,7 @@
     <div class="division"></div>
 
    
-    <ion-tab-button  class="notifs" (click)="mudacor(cart)">
+    <ion-tab-button  tab="checkout" class="notifs" (click)="mudacor(cart)">
       <ion-icon name="cart-outline"></ion-icon>
     </ion-tab-button>
 

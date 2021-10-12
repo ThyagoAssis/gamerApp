@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar color="primary" >
+  <ion-toolbar color="primary" mode="ios">
     <ion-title>Favoritos</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <ion-grid>
+    <ion-row>
+
+      <ion-col size="6">
+        <ion-card class="col1" routerLink="/product">
+          <ion-card-title>{{products1.title}}</ion-card-title>
+          <ion-img [src]="products1.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products1.price}}</ion-card-subtitle>
+          </ion-card-content>          
+        </ion-card>
+
+
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="col2">
+          <ion-card-title>{{products2.title}}</ion-card-title>
+          <ion-img [src]="products2.img"></ion-img>
+          <ion-card-content>
+            <ion-card-subtitle>{{products2.price}}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
