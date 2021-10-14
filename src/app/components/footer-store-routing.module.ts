@@ -4,7 +4,7 @@ import { FooterStoreComponent } from "./footer-store/footer-store.component";
 
 const routes: Routes = [
     {
-        path: 'footer-store', 
+        path: '', 
         component: FooterStoreComponent,
         children: [            
             {
@@ -19,11 +19,15 @@ const routes: Routes = [
                 path: 'checkout',
                 loadChildren: () => import('../pages/checkout/checkout.module').then( m => m.CheckoutPageModule)
               },
+              {
+                path: 'payment',
+                loadChildren: () => import('../pages/payment/payment.module').then( m => m.PaymentPageModule)
+              },
         ],
     },
     {
         path: '',
-        redirectTo: 'footer-store/store',
+        redirectTo: '/store',
         pathMatch: 'full'
     }
 ];

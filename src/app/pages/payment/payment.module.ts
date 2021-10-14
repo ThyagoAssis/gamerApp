@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CheckoutPageRoutingModule } from './checkout-routing.module';
+import { PaymentPageRoutingModule } from './payment-routing.module';
 
-import { CheckoutPage } from './checkout.page';
+import { PaymentPage } from './payment.page';
 import { HeaderModule } from 'src/app/components/header/header.module';
 
 @NgModule({
@@ -15,8 +15,8 @@ import { HeaderModule } from 'src/app/components/header/header.module';
     FormsModule,
     IonicModule,
     HeaderModule,
-    CheckoutPageRoutingModule
+    PaymentPageRoutingModule
   ],
-  declarations: [CheckoutPage]
+  declarations: [PaymentPage]
 })
-export class CheckoutPageModule {}
+export class PaymentPageModule {}
